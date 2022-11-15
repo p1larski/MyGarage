@@ -2,5 +2,5 @@ DROP TABLE IF EXISTS cars CASCADE;
 CREATE TABLE cars(
         id INT PRIMARY KEY,
         odometer integer,
-        description TEXT,
+        descriptionOfMalfunction VARCHAR(255),
         dateOfArrival TIMESTAMP);

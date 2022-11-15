@@ -18,7 +18,9 @@ public class Car {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private Long odometer;
-    private String description;
+    @Column(name = "descriptionofmalfunction")
+    private String descriptionOfMalfunction;
+    @Column(name = "dateofarrival")
     private LocalDate dateOfArrival;
 
     @Override
@@ -26,7 +28,7 @@ public class Car {
         return "Car{" +
                 "id=" + id +
                 ", odometer=" + odometer +
-                ", description='" + description + '\'' +
+                ", descriptione='" + descriptionOfMalfunction + '\'' +
                 ", dateOfArrival=" + dateOfArrival +
                 '}';
     }

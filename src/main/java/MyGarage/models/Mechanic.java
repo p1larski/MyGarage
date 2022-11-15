@@ -10,7 +10,7 @@ import java.time.LocalDate;
 @Getter
 @Setter
 @NoArgsConstructor
-@Entity
+/*@Entity*/
 public class Mechanic {
 
     @Id

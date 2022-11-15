@@ -14,7 +14,6 @@ public class CarController {
 
     @GetMapping("/car/{id}")
     public String getCarById(@PathVariable Long id) {
-        String carInformations = carService.showCarById(id).toString();
-        return carInformations;
+        return carService.showCarById(id);
     }
 }
