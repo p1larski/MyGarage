@@ -1,0 +1,1 @@
+INSERT INTO cars (id, odometer, description, dateOfArrival) VALUES (1, 432000, 'brak ręcznego', null);

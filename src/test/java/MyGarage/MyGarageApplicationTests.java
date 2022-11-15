@@ -1,3 +1,4 @@
+/*
 package MyGarage;
 
 import org.junit.jupiter.api.Test;
@@ -11,3 +12,4 @@ class MyGarageApplicationTests {
 	}
 
 }
+*/
