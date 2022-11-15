@@ -15,7 +15,7 @@ public class CarController {
 
     @GetMapping("/hey")
     public String hi() {
-        carService.hello();
+        carService.showCar();
         return "he";
     }
 }

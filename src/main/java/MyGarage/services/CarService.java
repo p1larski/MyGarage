@@ -4,8 +4,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class CarService {
-    public String hello (){
-        System.out.println("hehe");
+    public String showCar (){
         return "hi";
     };
 }
