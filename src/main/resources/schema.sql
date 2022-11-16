@@ -1,6 +1,18 @@
-DROP TABLE IF EXISTS cars CASCADE;
-CREATE TABLE cars(
-        id INT PRIMARY KEY,
-        odometer integer,
-        descriptionOfMalfunction VARCHAR(255),
-        dateOfArrival TIMESTAMP);
+--DROP TABLE IF EXISTS cars, mechanics CASCADE;
+--CREATE TABLE mechanics(
+--        id serial,
+--        name VARCHAR(50),
+--        surname VARCHAR(50),
+--        phoneNumber VARCHAR(15),
+--        dateOfEmployement TIMESTAMP,
+--        PRIMARY KEY (id)
+--        );
+--DROP TABLE IF EXISTS cars;
+--CREATE TABLE cars(
+--        id serial,
+--        mechanic_id int,
+--        odometer integer,
+--        descriptionOfMalfunction TEXT,
+--        dateOfArrival TIMESTAMP,
+--        PRIMARY KEY (id),
+--        FOREIGN KEY (mechanic_id) REFERENCES mechanics(id) ON DELETE CASCADE);

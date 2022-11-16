@@ -1,4 +1,2 @@
-INSERT INTO cars (id, odometer, descriptionOfMalfunction, dateOfArrival) VALUES (1, 432000, 'brak ręcznego', null);
-INSERT INTO cars (id, odometer, descriptionOfMalfunction, dateOfArrival) VALUES (2, 332000, 'brak wspomagania', null);
-INSERT INTO cars (id, odometer, descriptionOfMalfunction, dateOfArrival) VALUES (3, 132000, 'Zatarte panewki', null);
-INSERT INTO cars (id, odometer, descriptionOfMalfunction, dateOfArrival) VALUES (4, 232000, 'Brak lusterek', null);
+--INSERT INTO mechanics (id, name, surname, phonenumber, dateofemployement) VALUES (1, 'Michał', 'Kusterek', '996-665-554', '1971-07-13');
+--INSERT INTO cars (id, odometer, mechanic_id, descriptionOfMalfunction, dateOfArrival) VALUES (1, 232000, 1, 'Brak lusterek', '1971-07-13');

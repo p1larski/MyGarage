@@ -6,11 +6,12 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.List;
 
 @Getter
 @Setter
 @NoArgsConstructor
-/*@Entity*/
+@Entity
 public class Mechanic {
 
     @Id
@@ -21,4 +22,11 @@ public class Mechanic {
     private String phoneNumber;
     private LocalDate dateOfEmployement;
 
+    @OneToMany(mappedBy = "mechanicWhoRepair")
+    private List<Car> carsRepairedByMechanic;
+
+    public Mechanic(String name, String surname) {
+        this.name = name;
+        this.surname = surname;
+    }
 }

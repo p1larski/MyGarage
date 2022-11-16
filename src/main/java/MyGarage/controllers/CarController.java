@@ -1,10 +1,9 @@
 package MyGarage.controllers;
 
+import MyGarage.models.Car;
 import MyGarage.services.CarService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class CarController {
@@ -13,7 +12,12 @@ public class CarController {
     private CarService carService;
 
     @GetMapping("/car/{id}")
-    public String getCarById(@PathVariable Long id) {
+    public String showCarById(@PathVariable Long id) {
         return carService.showCarById(id);
+    }
+    @PostMapping("/car/new")
+    public String newCarForRepair(@RequestBody Car car){
+        carService.newCarForRepair(car);
+        return "success";
     }
 }
